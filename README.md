@@ -15,14 +15,6 @@
 
 ---
 
-## 📌 Submission Note
-
-This project was built in response to a **Frontend Developer Assignment** to design and implement a clean, interactive finance dashboard interface. All core requirements and most optional enhancements have been implemented.
-
-> **Live Demo**: [finora.vercel.app](https://finora.vercel.app) *(replace with actual URL after deployment)*  
-> **Repository**: [github.com/YOUR_USERNAME/finora](https://github.com/YOUR_USERNAME/finora)
-
----
 
 ## 📋 Assignment Requirements Coverage
 
@@ -90,7 +82,7 @@ All data is generated from realistic mock seed functions in `lib/mockData.ts`, s
 ### Prerequisites
 
 - **Node.js** v18+
-- **pnpm** v8+ *(or npm v9+)*
+- **npm** v9+
 - A free [Clerk](https://clerk.com) account for authentication keys
 
 ### 1. Clone & Install
@@ -98,7 +90,7 @@ All data is generated from realistic mock seed functions in `lib/mockData.ts`, s
 ```bash
 git clone https://github.com/YOUR_USERNAME/finora.git
 cd finora
-pnpm install
+npm install
 ```
 
 ### 2. Configure Environment Variables
@@ -115,12 +107,12 @@ CLERK_SECRET_KEY=sk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ### 3. Run Locally
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-> For a production build: `pnpm build && pnpm start`
+> For a production build: `npm run build && npm run start`
 
 ---
 
@@ -237,10 +229,10 @@ finora/
 
 | Command | Description |
 |---|---|
-| `pnpm dev` | Start the dev server with hot-reload |
-| `pnpm build` | Build the optimised production bundle |
-| `pnpm start` | Start the production server (after build) |
-| `pnpm lint` | Run ESLint checks |
+| `npm run dev` | Start the dev server with hot-reload |
+| `npm run build` | Build the optimised production bundle |
+| `npm run start` | Start the production server (after build) |
+| `npm run lint` | Run ESLint checks |
 
 ---
 
@@ -251,7 +243,7 @@ Deployed on **Vercel**:
 1. Push code to GitHub
 2. Import the repo at [vercel.com/new](https://vercel.com/new)
 3. Add `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` as environment variables
-4. Deploy — Vercel auto-runs `pnpm build` and serves the result
+4. Deploy — Vercel auto-runs `npm run build` and serves the result
 
 ---
 
